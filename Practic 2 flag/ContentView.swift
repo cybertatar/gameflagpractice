@@ -37,9 +37,9 @@ struct ContentView: View {
                         Image(self.countries[number])
                             .renderingMode(.original)
                             .frame(width: 250, height: 115)
-                            .clipShape(Capsule())
+                            .clipShape(Capsule()) //помещаем флажки в овалы
                             .overlay(Capsule().stroke(Color.black, lineWidth: 3))
-                            .shadow(color: .black, radius: 2)
+                            .shadow(color: .black, radius: 2) //добавляем тени для контура флажков
                         
                     }
                 }
